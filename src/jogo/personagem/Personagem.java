@@ -24,6 +24,13 @@ public class Personagem {
    * Executa uma accao de acordo com o Controlo
    */
   public void executar() {
+    // TESTES A SER ELEMINADOS
+    // Testes de verificacao de arquitetura
+    // Teste a classe personagem
+    actuar(Accao.PROCURAR);
+    // Teste a classe Controlo e Percepcao
+    controlo = new Controlo();
+    controlo.processar(null);
   }
 
   /*
@@ -37,6 +44,7 @@ public class Personagem {
    * Apresenta a aplicaçao da acao do personagem na interface do jogo
    */
   private void actuar(Accao accao) {
-
+    // TESTES A SER ELEMINADOS
+    System.out.println("Execucao da classe Personagem, Accao: " + accao);
   }
 }
