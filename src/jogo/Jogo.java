@@ -11,9 +11,7 @@ public class Jogo {
      * O metodo main executa o jogo
      */
     public static void main(String[] args) {
-        ambiente = new Ambiente(); // teste para a classe ambiente
-        personagem = new Personagem(ambiente); // teste para as classes do package personagem
-        executar();
+
     }
 
     /*
@@ -22,15 +20,6 @@ public class Jogo {
      */
     private static void executar() {
 
-        // TESTES A SER ELEMINADOS
-        // Neste teste, uma mensagem é apresentada na consola
-        // Deve apresentar a execucao da classe Ambiente, com o evento 'SILENCIO'
-        ambiente.getEvento();
-        // Neste teste, varias mensagens são apresentadas na consola
-        // Deve apresentar a execucao da classe Personagem, com a accao 'PROCURAR'
-        // Deve apresentar a execucao da classe Controlo, com a accao 'PROCURAR'
-        // Deve apresentar a execucao da classe Percepcao, com o evento 'SILENCIO'
-        personagem.executar();
     }
 
 }

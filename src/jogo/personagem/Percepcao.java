@@ -13,11 +13,6 @@ public class Percepcao {
      */
     public Percepcao(Evento evento) {
 
-        // TESTES A SER ELEMINADOS
-        // Testes de verificacao de arquiteturas
-        evento = Evento.SILENCIO;
-        System.out.println("Execucao da classe Percepcao, Evento: " + evento);
-
     }
 
     /*

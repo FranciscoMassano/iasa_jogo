@@ -20,11 +20,6 @@ public class Controlo {
    * Processa uma percepção e determina a ação a ser realizada pelo personagem
    */
   public Accao processar(Percepcao percepcao) {
-    // TESTES A SER ELEMINADOS
-    // Testes de verificacao de arquitetura
-    accao = Accao.PROCURAR;
-    System.out.println("Execucao da classe Controlo, Accao: " + accao);
-    percepcao = new Percepcao(Evento.SILENCIO);
     return accao;
   }
 
