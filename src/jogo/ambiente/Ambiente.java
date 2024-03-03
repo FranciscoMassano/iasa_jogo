@@ -18,6 +18,10 @@ public class Ambiente {
    * Retorna o evento que está actualmente ativo
    */
   public Evento getEvento() {
+    // TESTES A SER ELEMINADOS
+    // este teste serve apenas para verificar que a arquitectura esta correcta
+    evento = Evento.SILENCIO;
+    mostrar();
     return evento;
   }
 
@@ -39,6 +43,7 @@ public class Ambiente {
    * Apresenta na interface do jogo o evento que foi executado
    */
   private void mostrar() {
+    System.out.println("Execucao da classe Ambiente, Evento: " + evento);
   }
 
 }
