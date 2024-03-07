@@ -3,24 +3,24 @@ package jogo.personagem;
 import agente.Accao;
 import agente.Controlo;
 import agente.Percepcao;
-import maqest.Estado;
-import maqest.MaquinaEstados;
 
-public class ControloPersonagem extends Controlo {
+public class ControloPersonagem implements Controlo {
     public Percepcao percepcao;
     public Accao accao;
-    private MaquinaEstados maqest;
-
-    // readonly
-    public Estado estado;
 
     public ControloPersonagem() {
     }
 
+    /*
+     * É retornada uma ação, tendo em conta o evento percecionado
+     */
     public Accao processar(Percepcao percepcao) {
         throw new UnsupportedOperationException("Unimplemented method 'processar'");
     }
 
+    /*
+     * Aprensenta a aplicaçao da acao do personagem na interface do jogo
+     */
     private void mostrar() {
     }
 

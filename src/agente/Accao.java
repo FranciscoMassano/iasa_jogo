@@ -4,14 +4,18 @@ import ambiente.Comando;
 
 public class Accao {
   /*
-   * O Comando a ser transmitido
+   * O comando a processado pelo controlo e executado pelo agente
    */
-  public Comando evento; // read only??
+  public Comando comando;
 
   /*
    * Contructor da classe Percepcao
    */
-  public Accao(Comando evento) {
+  public Accao(Comando comando) {
 
+  }
+
+  public Comando getComando() {
+    return comando;
   }
 }

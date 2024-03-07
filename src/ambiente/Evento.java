@@ -1,5 +1,6 @@
 package ambiente;
 
 public interface Evento {
-  void mostrar();
+
+    void mostrar();
 }
