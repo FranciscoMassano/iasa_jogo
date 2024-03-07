@@ -10,8 +10,10 @@ public enum EventoJogo implements Evento {
     FOTOGRAFIA,
     TERMINAR;
 
+    public Evento evento;
+
     @Override
     public void mostrar() {
-        throw new UnsupportedOperationException("Unimplemented method 'mostrar'");
+        System.out.println("Evento:" + evento);
     }
 }
