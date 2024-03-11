@@ -47,6 +47,8 @@ public abstract class Agente {
    * Apresenta a aplicaçao da acao do personagem na interface do jogo
    */
   protected void actuar(Accao accao) {
-
+    if (accao != null) {
+      accao.getComando().mostrar();
+    }
   }
 }
