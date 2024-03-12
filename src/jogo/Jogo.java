@@ -19,6 +19,9 @@ public class Jogo {
     jogo.executar();
   }
 
+  /*
+   * Loop principal do jogo
+   */
   public void executar() {
     do {
       ambiente.evoluir();
