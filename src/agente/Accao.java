@@ -12,7 +12,7 @@ public class Accao {
    * Contructor da classe Percepcao
    */
   public Accao(Comando comando) {
-
+    this.comando = comando;
   }
 
   public Comando getComando() {

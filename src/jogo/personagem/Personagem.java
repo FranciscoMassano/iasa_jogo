@@ -4,8 +4,6 @@ import agente.Agente;
 import jogo.ambiente.AmbienteJogo;
 
 public class Personagem extends Agente {
-  public ControloPersonagem controlo;
-
   /*
    * Constructor da classe personagem
    */

@@ -30,7 +30,6 @@ public class AmbienteJogo implements Ambiente {
      * O mapa eventos guarda o mapeamento entre inputs e eventos
      * O scanner recebe o input do utilizador
      */
-    public Comando comando;
     private EventoJogo evento;
     private Map<String, EventoJogo> eventos;
     private Scanner scanner = new Scanner(System.in);
@@ -53,15 +52,15 @@ public class AmbienteJogo implements Ambiente {
      * O ambiente evolui de acordo com o evento escolhido
      */
     public void evoluir() {
-        this.evento = (EventoJogo) observar();
-        executar(comando);
+        System.out.println();
+        System.out.println("Insira o comando");
+        this.evento = gerarEvento();
     }
 
     /*
      * O agente observa o ambiente, disto resulta um evento
      */
     public Evento observar() {
-        Evento evento = gerarEvento();
         return evento;
     }
 
